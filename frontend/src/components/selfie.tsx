@@ -32,7 +32,7 @@ export const Selfie = () => {
           method: "POST",
           headers: {
             "x-functions-key":
-              "gfzcUXdkYoVI7RmpJjlPX0aXIQMWzPYloKYrEIeXskO5AzFu4dzctQ==",
+              "yourkey",
           },
           body: JSON.stringify({
             upload_file: selfie,
@@ -62,7 +62,7 @@ export const Selfie = () => {
           method: "POST",
           headers: {
             "x-functions-key":
-              "gfzcUXdkYoVI7RmpJjlPX0aXIQMWzPYloKYrEIeXskO5AzFu4dzctQ==",
+              "yourkey",
           },
           body: JSON.stringify({
             session_id: sessionId,
@@ -80,7 +80,7 @@ export const Selfie = () => {
               method: "POST",
               headers: {
                 "x-functions-key":
-                  "gfzcUXdkYoVI7RmpJjlPX0aXIQMWzPYloKYrEIeXskO5AzFu4dzctQ==",
+                  "yourkey",
               },
               body: JSON.stringify({
                 image_id: `${sessionId}/${sessionId}_${filter}.png`,

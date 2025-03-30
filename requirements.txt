@@ -1,0 +1,5 @@
+azure-storage-blob
+openai
+azure-functions
+pandas
+requests

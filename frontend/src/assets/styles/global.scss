@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "SignPainter-HouseScript";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/signpainter_housescript.woff") format("woff"),
+    url("/fonts/signpainter_housescript.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Gelion";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/Gelion-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Gelion";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/Gelion-SemiBold.ttf") format("ttf");
+}
+
+html,
+body {
+  min-height: 100dvh;
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+
+  background: linear-gradient(
+    128deg,
+    rgba(179, 203, 229, 1) 0%,
+    rgba(245, 208, 216, 1) 100%
+  );
+}

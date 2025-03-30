@@ -1,0 +1,46 @@
+.selfie-loader {
+  &__svg {
+    width: 0;
+    height: 0;
+  }
+
+  &__filter {
+    position: absolute;
+    // top: -50%;
+    // left: -50%;
+    // width: 200%;
+    width: 100%;
+    height: 100px;
+    // aspect-ratio: 1;
+    pointer-events: none;
+    backdrop-filter: url(#pixelate);
+    animation: selfie-loader 5s ease-in-out infinite;
+    // animation: selfie-loader2 5s linear infinite;
+    filter: hue-rotate(222deg);
+
+    // -webkit-mask-image: conic-gradient(transparent 25%, black 50%);
+    // mask-image: conic-gradient(transparent 25%, black 50%);
+
+    box-shadow: 0px 0px 36px 4px rgba(164, 45, 135, 0.25);
+  }
+}
+
+@keyframes selfie-loader {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: calc(100% - 100px);
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes selfie-loader2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,19 @@
+.button {
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+  }
+
+  &--disabled {
+    pointer-events: none;
+    background-color: #c7c7c7;
+    color: #5a5a5a;
+  }
+}
